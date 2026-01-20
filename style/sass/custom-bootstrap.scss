@@ -1,24 +1,22 @@
-$primary:#1e3a47;
-$secondary: #a3ac97;
-$light: #f7ece4;
-$info: #c8aa71;
-$success: #83503f;
-$dark: #DEBFB4; 
-
+/* 1) Bootstrap functions d'abord */
 @import "../../node_modules/bootstrap/scss/functions";
-@import "../../node_modules/bootstrap/scss/variables";
 
+/* 2) Tes couleurs (overrides) */
+$primary:   #1e3a47;
+$secondary: #a3ac97;
+$light:     #f7ece4;
+$info:      #c8aa71;
+$success:   #83503f;
+$dark:      #DEBFB4;
 
+/* 3) Typo Bootstrap (overrides) */
+$font-family-base: "Montserrat", sans-serif;
+$headings-font-family: "Sacramento", sans-serif;
+
+/* 4) Bootstrap complet */
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
-
-$heading-font: 'Sacramento', sans-serif;
-$body-font: 'Montserrat', sans-serif;
-
-body {
-  font-family: $body-font;
-}
-
+/* 5) (Optionnel) petits ajustements supplémentaires */
 h1, h2, h3 {
-  font-family: $heading-font;
+  font-family: $headings-font-family;
 }
